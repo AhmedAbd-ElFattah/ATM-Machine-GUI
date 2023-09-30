@@ -1,0 +1,2405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>755</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ATM Machine GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="LoginPage_0">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="username_label">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>User Name</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="username_Focus_Loginpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press A</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="userName_lineEdit">
+             <property name="focusPolicy">
+              <enum>Qt::StrongFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhNone</set>
+             </property>
+             <property name="text">
+              <string>365682020</string>
+             </property>
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Enter user name.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="password_label">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Password </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="password_Focus_Loginpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press B</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+B</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="password_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="text">
+              <string>9356</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter password.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="login_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+               </property>
+               <property name="text">
+                <string>Login</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+C</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="temp_label">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press C Button in keypad</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="clear_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+               </property>
+               <property name="text">
+                <string>Clear</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+D</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="clearPushButtonKeypad_label">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press D Button in keypad</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ServicePage_1">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QPushButton" name="withdraw_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Withdraw</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="usernameKeypad_label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press A</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="deposit_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Deposit</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="usernameKeypad_label_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press B</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QPushButton" name="transfer_pushButton_9">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Transfer</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+C</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="usernameKeypad_label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press C</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QPushButton" name="AccountBalance_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Account balance</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="usernameKeypad_label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press D</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QPushButton" name="logout_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Logout</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+*</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="logout_label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press *</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="usernameNotExist_2">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QFrame" name="frame_6">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="usernameNotExist_label">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>User Name Not exist.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="ReturnToMainPage_pushButton">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+             </property>
+             <property name="text">
+              <string>Return To Main Page</string>
+             </property>
+             <property name="shortcut">
+              <string>Alt+A</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="loginPushButtonKeypad_label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Press A</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="passwordNotCorrect_3">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLabel" name="usernameNotExist_label_2">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Password is not correct.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QPushButton" name="ReturnToMainPage_pushButton_2">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+               </property>
+               <property name="text">
+                <string>Return To Main Page</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+A</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="loginPushButtonKeypad_label_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="AccountBalancePage_4">
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Account Balance</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QTableWidget" name="AccountBalance_tableWidget">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>Account Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total Balance</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Available Balance</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_23">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_35">
+              <item>
+               <widget class="QPushButton" name="Up_FromAccBaalance_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Up</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Up</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_36">
+              <item>
+               <widget class="QPushButton" name="Down_FromAccBaalance_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Down</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Down</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QPushButton" name="ReturnToMainPage_pushButton_3">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Return To Service Page</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press A</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QPushButton" name="logout_pushButton1">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Logout</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press B</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="WithdrawPage_5">
+       <layout class="QVBoxLayout" name="verticalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Withdraw Select account please.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QTableWidget" name="AccountBalanceFromWithdraw_tableWidget">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>Account Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total Balance</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Available Balance</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QPushButton" name="Up_FromWithdraw_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Up</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Up</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_27">
+              <item>
+               <widget class="QPushButton" name="Down_FromWithdraw_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Down</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Down</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_18">
+             <item>
+              <widget class="QLabel" name="username_label_4">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Amount of Money</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AmountOfMoney_Focus_Withdrawpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press A</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="AmountOfMoney_FromWithdrawPage_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Enter amount of money.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Message_WithdrawPage_label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="QPushButton" name="Withdraw_WithdrawPage_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Withdraw</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press B</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QPushButton" name="ReturnToMainPage_pushButton_4">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Return To Service Page</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+C</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press C</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QPushButton" name="logout_pushButton_2">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Logout</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press D</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DepositPage_6">
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Deposit Select account please.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QTableWidget" name="AccountBalance_DepositPage_tableWidget">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>Account Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total Balance</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Available Balance</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_21">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_30">
+              <item>
+               <widget class="QPushButton" name="Up_FromDeposit_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Up</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Up</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_31">
+              <item>
+               <widget class="QPushButton" name="Down_FromDeposit_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Down</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Down</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_32">
+             <item>
+              <widget class="QLabel" name="username_label_5">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Amount of Money</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AmountOfMoney_Focus_Depositpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press A</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="AmountOfMoney_FromDepositPage_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Enter amount of money.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Message_DepositPage_label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="QPushButton" name="Deposit_DepositPage_pushButton_2">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Deposit</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_19">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press B</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QPushButton" name="ReturnToMainPage_pushButton_5">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Return To Service Page</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+C</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press C</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QPushButton" name="logout_pushButton_3">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Logout</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press D</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="TransferMoney_7">
+       <layout class="QVBoxLayout" name="verticalLayout_24">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Transfer Money Select account please.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QTableWidget" name="AccountBalance_TransferPage_tableWidget">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>Account Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total Balance</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Available Balance</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <item>
+               <widget class="QPushButton" name="Up_FromTransfer_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Up</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Up</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_24">
+              <item>
+               <widget class="QPushButton" name="Down_FromTransfer_pushButton">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Down</string>
+                </property>
+                <property name="shortcut">
+                 <string>Alt+Down</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QLabel" name="username_label_2">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>To User</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ToUser_Focus_Transferpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press A</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+A</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="userNumber_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string>116647496</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter user name.</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_9">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <item>
+              <widget class="QLabel" name="username_label_3">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Enter Account Number of user</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AccNumUser_Focus_Transferpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press B</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+B</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="accNumber_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string>1955092</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter Account number</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_12">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_38">
+             <item>
+              <widget class="QLabel" name="username_label_6">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Amount of money</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AmountOfMoney_Focus_Transferpage">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                 <strikeout>false</strikeout>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+text-align: left;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Press C</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+C</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="AmountOfMoney_FromTransferPage_lineEdit">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	padding: 5px;
+}</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Enter amount of money</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Message_TransferPage_label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QPushButton" name="transfer_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Transfer</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press D</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QPushButton" name="ReturnToMainPage_pushButton_6">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: rgb(0, 85, 255);
+	color:  white;
+}
+
+QPushButton :hover{
+	background: rgba(0, 85, 255, 200);
+}
+
+QPushButton :pressed{
+	background: rgba(0, 85, 255, 200);
+}</string>
+            </property>
+            <property name="text">
+             <string>Return To Service Page</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+*</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginPushButtonKeypad_label_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    border: 5px solid #ff6600; 
+    border-radius: 15px; 
+    padding: 5px; 
+	color:black;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Press *</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
